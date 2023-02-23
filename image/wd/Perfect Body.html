@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="Perfect Body.css">
+  <!-- <link rel="stylesheet" href="AddToCart.css"> -->
+  <!-- <script src="peefectBody.js"></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+ 
+<div class="main">
+<!----Navigation Bar--> 
+<div class="navigationBar">
+  <div><img src="logo.jpg" alt="logo" id="logo"></div>
+  <ul class="NavList">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#aboutus">About Us</a></li>
+    <li class="dropdown"><a href="" class="dropbtn">Shop By <span class="arrow"><i class="fa-solid fa-caret-down"></i> </span></a>
+      <div class="dropdownContent">
+        <div class="subDrop">
+          <a href="#brands" class="subDropBtn">Brands<i class="fa-solid fa-caret-right"></i></a>
+            <div class="subDropContent">
+              <a href="#allmax">AllMax</a>
+              <a href="#chiba">Chiba</a>
+              <a href="#David Kirch Wellness Co.">David Kirch Wellness Co.</a>
+              <a href="#Muscle Nutrition">Muscle Nutrition</a>
+            </div>
+          </div>
+            <!-- <div class="dropdownContent"> -->
+          <div class="subDrop">
+            <a href="#categories" class="subDropBtn">Categories<i class="fa-solid fa-caret-right"></i></a>
+              <div class="subDropContent">
+                <a href="">Eating</a>
+                <a href="">Wearing</a>
+                <a href="">Lotions</a>
+                <a href="">Medical Ball</a>
+              </div>
+            </div>
+           <!-- </div> -->
+           <div class="subDrop">
+            <a href="#goals" class="subDropBtn">Goal<i class="fa-solid fa-caret-right"></i></a>
+              <div class="subDropContent">
+                <a href="">Build Muscle</a>
+                <a href="">Hormone Balance</a>
+                <a href="">Lose Weight</a>
+                <a href="">Vegan Diet</a>
+              </div>
+        </div>
+    </li>
+    <li><a href="">Contact Us</a></li>
+  </ul>
+  <div class="w-25 h-50 m-3 ms-5">
+  <button id="Cart" onclick="CartOpen()" class="rounded-pill">
+    <!-- <a href="Cart.html"></a>s -->
+    <i class="fa-solid fa-cart-shopping fa-lg"></i>
+    <span id="count"class="m-3">0</span>
+  </button>
+  <script>
+  function CartOpen(){
+    window.open("Cart.html")
+  }
+  </script>
+</div>
+  <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a> -->
+</div>
+
+
+<!-----Home Carousel-->
+<div class="homeContent" id="home">
+  <div id="carouselExampleIndicators" class="carousel slide justify-content-center" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active  justify-content-center align-content-center  bg-light" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class=" justify-content-center align-content-center bg-light"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class=" justify-content-center align-content-center bg-light"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4" class=" justify-content-center align-content-center bg-light"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active justify-content-center align-content-center" data-bs-interval="3000" >
+          <img src="image/allwheygold.jpg" class="d-block imghome" alt="...">
+        </div>
+        <div class="carousel-item justify-content-center align-content-center" data-bs-interval="3000">
+          <img src="image/lotion3.jpg" class="d-block imghome" alt="...">
+        </div>
+        <div class="carousel-item justify-content-center align-content-center" data-bs-interval="3000">
+          <img src="image/medicineball.jpg" class="d-block imghome" alt="...">
+        </div>
+        <div class="carousel-item justify-content-center align-content-center align-item-center" data-bs-interval="3000">
+          <img src="image/gloves.jpg" class="d-block imghome" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev justify-content-center align-content-center" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  <div class="homeInfo">
+   <div><p class="quote m-2"><b><q>Good Health starts with fit body</q></b></p>
+      <p class="pbc pt-2"> <b>  # Do you want</b></p>
+      <div class="ms-4"><b>=> To Shape your body Perfect fit?</b></div>
+      <div class="ms-4"><b>=> Lose Weight?</b></div>
+      <div class="ms-4"><b>=> Energised or maintain body wellness?</b></div>
+      <p><div class="pbc"><b>	Then, <span id="pb"><q>perfect body</q></span>provide you the best 	nutrition and tools from the top national 	and international brands.</b></div>
+      <div class="pbc"><b><span id="pb"><q>Perfect body</q></span> is the combination of healthy nutrition , muscle lotions and 	workout helpful equipment.</b></div></p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-----About Us-->
+
+<div class="Aboutus" id="aboutus">
+  <div class="w-100 h-25 about"><p class="about">Since its Inception in 1997, M/s. ARC Distributors a Proprietorship Company, has groomed into versatile business verticals namely Jewelry Tools & Consumables, Dental Lab Products & Consumables And Dietary Supplements / Sports Nutrition.</p>
+    <p>In 2015, M/s. ARC Distributors, a Proprietorship Firm was upgraded to a India Private Limited Company as M/s.ARC Distributors (I) Pvt. Ltd. with a to enhance Indian market by creating a penetration / promoting Internationally Reputed Brand Products in the country.</p>
+  </div>
+  <div class="whyUs">
+      <div class="whychooseus">
+          <center><p class="wpb text-dark">Why Perfect Body</p></center>
+          <p class="ms-2 text-light">Perfect Body Co. is one of the leading Indian companies dealing with Sports Nutrition & Dietary Supplements from some of the best-known brands worldwide.</p>
+          <p class="ms-2 text-light">Our Vision is to make available / cater our valued customers with the Best quality products at a Fair / competitive Price.</p>
+      </div>
+      <div class="wcu">
+          <center><img src="image/distributor.png" class="wcuImage" alt=""></center>
+          <p><b>Since, more than a decade, we import and distribute products of reputed Brands such as  AllMaxx,  Muscletech,  USP labs, Giant Sports, Athletic Edge, BPI Sports, Universal Nutrition, GAT Sport, Nutrex, Ultimate Nutrition etc. </b></p>
+      </div>
+      <div class="wcu">
+        <center><img src="image/best price.jpg" class="wcuImage" alt=""></center>
+        <p><b>We thrive to get the best quality products to our customers at fair & competitive prices. Thus, assuring the customers of genuine and best deals/rates in the market.</b></p>
+      </div>
+      <div class="wcu">
+        <center><img src="image/ecommerce.png" class="wcuImage" alt=""></center>
+        <p><b>We cater to the distributor/wholesaler/retailer & e-commerce channels throughout the country.</b></p>
+      </div>
+  </div>
+</div>
+
+
+<!----Categories-->
+
+<div class="container-fluid pb-5" id="shopby">
+    <div class="ShopBy" id="brands"><b>Shop By Brands</b></div>
+    <p></p>
+    <p class="brandName" id="allmax"> <b>AllMax</b></p>
+<div class="wrapper">
+    <div><a href="source/Allmax%20Allwhey%20Gold%205%20Lb%20Chocolate.html" target="_blank"><img src="image\Allmax\Allmax Allwhey Gold 5 Lb Chocolate.jpg" alt="" id="root"></a><p></p><p>Allmax Allwhey Gold 5 Lb Chocolate</p> <button class="rounded-pill ms-5 mt-2 p-1 addCart" onclick="addToCart()">Add To Cart</button></div>
+    <div><a href="source/Allmax%20Allwhey%20Gold%205%20Lb%20Cookies%20&%20Cream.html" target="_blank"><img src="image\Allmax\Allmax Allwhey Gold 5 Lb Cookies & Cream3.jpg" alt=""></a><p></p> Allmax Allwhey Gold 5 Lb Cookies & Cream<div><button class="rounded-pill ms-5 mt-2 p-1 addCart">Add To Cart</button></div></div>
+    <div><a href="source/Allmax%20Allwhey%20Gold%205%20Lb%20Vanilla.html" target="_blank"><img src="image\Allmax\Allmax Allwhey Gold 5 Lb Vanilla.jpg" alt=""></a><p></p> Allmax Allwhey Gold 5 Lb Vanilla<div><button class="rounded-pill ms-5 mt-2 p-1 addCart">Add To Cart</button></div></div>
+    <div><a href=""><img src="image\Allmax\Allmax Isoflex Pure Whey Protein Isolate Chocolate 5 lbs.jpg" alt=""></a><p></p> Allmax Isoflex Pure Whey Protein Isolate Chocolate 5 lbs<div><button class="rounded-pill ms-5 mt-2 p-1 addCart">Add To Cart</button></div></div>
+  </div>    
+    
+    <p class="brandName m-5" id="chiba"> <b>CHIBA</b></p>
+    <div class="wrapper">
+        <div><img src="image\chiba\Chiba Fitness Belt (Leather) 40818 (L).jpg" alt=""><p></p>Chiba Fitness Belt (Leather) 40818 (L)</div>
+        <div><img src="image\chiba\Chiba Fitness Belt (Leather) 40818 (L).jpg" alt=""><p></p>Chiba Fitness Belt (Leather) 40818 (S)</div>
+        <div><img src="image\chiba\Chiba Grippad - S-5005 Black (Small).jpg" alt=""><p></p>Chiba Grippad - S-5005 Black (Small)</div>
+        <div><img src="image\chiba\Chiba Grippad - S-5006 Black (Large).jpg" alt=""><p></p> Chiba Grippad - S-5006 Black (Large)</div>
+        <div><img src="image\chiba\Chiba Grippad - S-5006 Black (Large).jpg" alt=""><p></p>Chiba Grippad - S-5006 Black (Small)</div>
+        <div><img src="image\chiba\Chiba Iron II Schwarz 40142 (S).jpg" alt=""><p></p>Chiba Iron II Schwarz 40142 (S)</div>
+        <div><img src="image\chiba\Chiba Lady Pro Black 40912 (S).jpg" alt=""><p></p>Chiba Lady Pro Black 40912 (S)</div>
+        <div><img src="image\chiba\Chiba Lady Pro Black 40912 (S).jpg" alt=""><p></p> Chiba Lady Pro Black 40912 (XS)</div>
+        <div><img src="image\chiba\Chiba Nylon Performer Black 40840 (M).jpg" alt=""><p></p>Chiba Nylon Performer Black 40840 (M)</div>
+        <div><img src="image\chiba\Chiba Premium Wristguard Schwarz 42122 (L).jpg" alt=""><p></p>Chiba Premium Wristguard Schwarz 42122 (L)</div>
+        <div><img src="image\chiba\Chiba Premium Wristguard Schwarz 42122 (L).jpg" alt=""><p></p>Chiba Premium Wristguard Schwarz 42122 (M)</div>
+        <div><img src="image\chiba\Chiba Premium Wristguard Schwarz 42122 (L).jpg" alt=""><p></p>Chiba Premium Wristguard Schwarz 42122 (S)</div>
+        <div><img src="image\chiba\Chiba Wristguard II Schwarz 40122 (S).jpg" alt=""><p></p>Chiba Wristguard II Schwarz 40122 (S)</div>
+        <div><img src="image\chiba\Chiba GEL PERFORMER 40160 (S).jpg" alt=""><p></p>Chiba GEL PERFORMER 40160 (S)</div>
+        <div><img src="image\chiba\Chiba GEL PERFORMER 40160 (S).jpg" alt=""><p></p>Chiba GEL PERFORMER 40160 (M)</div>
+      </div>
+
+  <p class="brandName mt-5" id="David Kirch Wellness Co."> <b>David Kirch Wellness Co.</b></p>
+    <div class="wrapper">
+        <div><img src="image\David-Krisch\4lb1-removebg-preview.png" alt="" class="h-75 w-100 mb-3 mt-5"><p></p>David Kirsch Medicine Ball 4 Lb</div>
+        <div><img src="image\David-Krisch\David-Kirsch-Medicine-Ball2.jpg" alt=""><p></p>David Kirsch Medicine Ball 6 Lb</div>
+        <div><img src="image\David-Krisch\8lb.jpg" alt="" class="h-75 mt-5 pt-5"><p></p><div class="mt-4">David Kirsch Medicine Ball 8 Lb</div></div>
+        <div><img src="image\David-Krisch\David-Kirsch-Medicine-Ball2.jpg" alt=""><p></p> David Kirsch Medicine Ball 10 Lb</div>
+        <div><img src="image\David-Krisch\David Kirsch Ankle Weight 5 Lb1.jpg" alt="" class="h-75 mb-5 pt-5"><p></p>David Kirsch Ankle Weight 5 Lb</div>
+        <div><img src="image\David-Krisch\David Kirsch Ankle Weight 10 Lb2.jpg" alt="" class="h-75 mb-5 pt-5" ><p></p>Chiba Iron II Schwarz 40142 (S)</div>
+        <div><img src="image\David-Krisch\GNC PP 100% Whey Protein Powder Chocolate Fudge 1.81 Kg.jpg" alt=""><p></p>GNC PP 100% Whey Protein Powder Chocolate Fudge 1.81 Kg</div>
+        <div><img src="image\David-Krisch\GNC PP 100% Whey Protein Powder Vanilla 1.81 Kg.jpg" alt="" class="w-100"><p></p>GNC PP 100% Whey Protein Powder Vanilla 1.81 Kg</div>
+        <div><img src="image\David-Krisch\GNC PP 100% Whey Protein Powder Strawberry 1.81 Kg1.jpg" alt=""><p></p>GNC PP 100% Whey Protein Powder Strawberry 1.81 Kg</div>
+        <div><img src="image\David-Krisch\GNC PP 100% Whey Protein Powder Kulfi 1.81 Kg.jpg" alt=""><p></p>GNC PP 100% Whey Protein Powder Kulfi 1.81 Kg</div>
+        <div><img src="image\David-Krisch\GNC PP 100% Whey Protein Powder Café Mocha 1.81 Kg2.jpg" alt="" ><p></p>GNC PP 100% Whey Protein Powder Café Mocha 1.81 Kg</div>
+        <div><img src="image\David-Krisch\GNC Weight Gainer Powder Chocolate 3 Kg .jpg" alt=""><p></p>GNC Weight Gainer Powder Chocolate 3 Kg</div>
+        <div><img src="image\David-Krisch\GNC PP Power Protein Powder Chocolate 1.81 Kg.jpg" alt=""><p></p>GNC PP Power Protein Powder Chocolate 1.81 Kg</div>
+        <div><img src="image\David-Krisch\GNC AMP Gold 100% Whey Protein Powder Chocolate 4 Lbs1.jpg" alt=""><p></p>GNC AMP Gold 100% Whey Protein Powder Chocolate 4 Lbs</div>
+        <div><img src="image\David-Krisch\GNC AMP Mass XXX Powder Chocolate 3 Kg.jpg" alt=""><p></p>GNC AMP Mass XXX Powder Chocolate 3 Kg</div>
+        <div><img src="image\David-Krisch\GNC AMP Gold Series BCAA Advanced Green Apple 400 Gm.jpg" alt=""><p></p>GNC AMP Gold Series BCAA Advanced Green Apple 400 Gm</div>
+        <div><img src="image\David-Krisch\GNC AMP Gold Series BCAA Advanced Orange 400 Gm.jpg" alt=""><p></p>GNC AMP Gold Series BCAA Advanced Orange 400 Gm</div>
+        <div><img src="image\David-Krisch\GNC AMP Gold Series BCAA Advanced Kiwi Strawberry 400 Gm.jpg" alt=""><p></p>GNC AMP Gold Series BCAA Advanced Kiwi Strawberry 400 Gm</div>
+        <div><img src="image\David-Krisch\GNC AMP Gold Series BCAA Advanced Watermelon 400 Gm.jpg" alt=""><p></p>GNC AMP Gold Series BCAA Advanced Watermelon 400 Gm</div>
+        <div><img src="image\David-Krisch\GNC AMP Gold Series BCAA Advanced Spicy Guava 400 Gm.jpg" alt=""><p></p>GNC AMP Gold Series BCAA Advanced Spicy Guava 400 Gm</div>
+        <div><img src="image\David-Krisch\GNC Pre-Workout Powder Lemon 360 Gm.jpg" alt=""><p></p>GNC Pre-Workout Powder Lemon 360 Gm</div>
+        <div><img src="image\David-Krisch\GNC Creatine Monohydrate Powder 250 Gm1.jpg" alt=""><p></p>GNC Creatine Monohydrate Powder 250 Gm</div>
+        <div><img src="image\David-Krisch\GNC Creatine Monohydrate Powder 100 Gm.jpg" alt=""><p></p>GNC Creatine Monohydrate Powder 100 Gm</div>
+        <div><img src="image\David-Krisch\GNC L-Carnitine 500 Mg Caps 1X60.jpg" alt=""><p></p>GNC L-Carnitine 500 Mg Caps 1X60</div>
+        <div><img src="image\David-Krisch\GNC Mega Men Sports Tablets 120X1.jpg" alt=""><p></p>GNC Mega Men Sports Tablets 120X1</div>
+        <div><img src="image\David-Krisch\GNC Women One Daily Multivitamin Tab 1X60.jpg" alt=""><p></p>GNC Women One Daily Multivitamin Tab 1X60</div>
+        <div><img src="image\David-Krisch\GNC Mega Men One Daily Tablets 1X60.jpg" alt=""><p></p>GNC Mega Men One Daily Tablets 1X60</div>
+        <div><img src="image\David-Krisch\GNC Triflex Acting Tabs 1X120.jpg" alt=""><p></p>GNC Triflex Acting Tabs 1X120</div>
+        <div><img src="image\David-Krisch\GNC Pro Performance ZMA Tablet 1X60.jpg" alt=""><p></p>GNC Pro Performance ZMA Tablet 1X60</div>
+        <div><img src="image\David-Krisch\GNC Calcium Plus 600 Tab With Magnesium & Vitamin D3 1 X 1801.jpg" alt=""><p></p>GNC Calcium Plus 600 Tab With Magnesium & Vitamin D3 1 X 180</div>
+        <div><img src="image\David-Krisch\GNC Biotin 10000 MCG Tablets 1X90.jpg" alt=""><p></p>GNC Biotin 10000 MCG Tablets 1X90</div>
+        <div><img src="image\David-Krisch\GNC Milk Thistle HP Caps 1X90.jpg" alt=""><p></p>GNC Milk Thistle HP Caps 1X90</div>
+        <div><img src="image\David-Krisch\GNC Triple Strength Fish Oil Softgel Cap 1X60.jpg" alt=""><p></p>GNC Triple Strength Fish Oil Softgel Cap 1X60</div>
+      </div>
+
+      <p class="brandName mt-5" id="Muscle Nutrition"> <b>David Kirch Wellness Co.</b></p>
+      <div class="wrapper">
+          <div><img src="image\Muscle Nutrition\MN Shrink Toning Lotion 8 oz.jpg" alt="" class="h-75 w-100 mb-3 mt-5"><p></p>MN Shrink Toning Lotion 8 oz</div>
+          <div><img src="image\Muscle Nutrition\MN Shrink Toning Lotion 8 oz.jpg" alt="" class="h-75 w-100 mb-3 mt-5"><p></p>MN Shrink Toning Lotion 8 oz </div>
+          <div><img src="image\Muscle Nutrition\MN Protein Coffee Drink 1 Lb.jpg" alt="" class="h-75 mt-5 pt-5"><p></p><div class="mt-4">MN Protein Coffee Drink 1 Lb</div></div>
+          <div><img src="image\Muscle Nutrition\Ultimate Nutrition ISO Sensation Cafe Brazil 5 LB.jpg" alt="" class="h-75 w-100 mb-3 mt-5"><p></p>Ultimate Nutrition ISO Sensation Chocolate Fudge 5 LB</div>
+          <div><img src="image\Muscle Nutrition\Ultimate Nutrition ISO Sensation Chocolate Fudge 5 LB.jpg" alt="" class="h-75 w-100 mb-3 mt-5"><p></p>Ultimate Nutrition ISO Sensation Cafe Brazil 5 LB</div>
+          
+        </div>
+</div>
+
+
+
+
+<!----Footer-->
+<div id="footer">
+  <div class="footer">
+      <img src="image/address.png" alt="address" id="address"><span class="d2 text-light ms-2">Address</span>
+      <div class="text-light p-1"><p>Perfect Body</p><div>8 ARC House, Sector No-8, </div><div>nr. Reena Mokal Hospital,</div><div> Charkop Gaon, <div> Kandivali West, Mumbai, Maharashtra 400067</div></div></div>
+  </div>
+  <div class="footer">
+      <img src="image/contact.png" alt="address" id="address"><span class="d2 text-light ms-2">Contact Us</span>
+      <div class="text-light p-1"><p><div><b>Phone No </b>: +91 9167203970 / 022 2860 2323 </div><div><b>Email Id </b> : ecommerce@arc-distributors.com </div></p> </div>
+  </div>
+  <div class="footer">
+      <p class="text-light"><b>Follow Us</b></p>
+      <div class="footerImage">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-twitter"></i>
+          
+      </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
+
+
